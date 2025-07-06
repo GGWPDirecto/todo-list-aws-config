@@ -1,0 +1,8 @@
+version = 0.1
+[staging.deploy.parameters]
+stack_name = "p1cd-stack"
+s3_bucket = "p1cd-deploy-bucket-carlos"
+region = "us-east-1"
+confirm_changeset = false
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Env=\"staging\""
